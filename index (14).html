@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>নুসুক আল হারামাইন ট্যুরস এন্ড ট্রাভেলস - উমরাহ প্যাকেজ ২০২৬</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Hind Siliguri', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .gold-gradient {
+            background: linear-gradient(135deg, #BF953F 0%, #FCF6BA 25%, #B38728 50%, #FBF5B7 75%, #AA771C 100%);
+        }
+        .islamic-pattern {
+            background-color: #fcfbf7;
+            background-image: radial-gradient(#e5d5b5 0.5px, transparent 0.5px), radial-gradient(#e5d5b5 0.5px, #fcfbf7 0.5px);
+            background-size: 20px 20px;
+            background-position: 0 0, 10px 10px;
+        }
+    </style>
+</head>
+<body class="islamic-pattern text-gray-800">
+
+    <div class="bg-emerald-900 text-amber-300 text-center py-2 px-4 text-sm font-semibold flex justify-between items-center max-w-full overflow-hidden">
+        <div class="animate-pulse flex items-center gap-2 mx-auto">
+            <i class="fa-solid fa-kaaba"></i>
+            <span>হজ পরবর্তী বিশেষ ওমরাহ প্যাকেজ ২০২৬ - সীমিত আসন সংখ্যা!</span>
+        </div>
+        <button onclick="openAdminModal()" class="text-xs bg-emerald-700 hover:bg-emerald-600 text-white px-2 py-1 rounded transition">
+            <i class="fa-solid fa-lock-open mr-1"></i> এডমিন
+        </button>
+    </div>
+
+    <header class="bg-white/90 backdrop-blur sticky top-0 z-40 shadow-sm border-b border-amber-100">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-12 h-12 bg-emerald-800 rounded-full flex items-center justify-center text-white text-xl font-bold border-2 border-amber-400">
+                    <i class="fa-solid fa-mosque"></i>
+                </div>
+                <div>
+                    <h1 id="site-title" class="text-xl md:text-2xl font-bold text-emerald-950">নুসুক আল হারামাইন</h1>
+                    <p class="text-xs text-amber-700 font-medium tracking-wide">ট্যুরস এন্ড ট্রাভেলস</p>
+                </div>
+            </div>
+            <nav class="hidden md:flex items-center gap-6 font-semibold text-emerald-900">
+                <a href="#home" class="hover:text-amber-600 transition">হোম</a>
+                <a href="#packages" class="hover:text-amber-600 transition">প্যাকেজসমূহ</a>
+                <a href="#features" class="hover:text-amber-600 transition">সুবিধাসমূহ</a>
+                <a href="#verses" class="hover:text-amber-600 transition">কোরআন ও হাদিস</a>
+                <a href="#contact" class="hover:text-amber-600 transition">যোগাযোগ</a>
+            </nav>
+            <a href="tel:01939455988" class="bg-emerald-700 hover:bg-emerald-800 text-white px-4 py-2 rounded-full font-bold shadow-md flex items-center gap-2 transition text-sm md:text-base">
+                <i class="fa-solid fa-phone-volume"></i> <span id="nav-phone">01939-455988</span>
+            </a>
+        </div>
+    </header>
+
+    <section id="home" class="relative bg-emerald-950 h-[500px] md:h-[600px] overflow-hidden">
+        <div id="slider-container" class="relative h-full w-full">
+            <div class="slide absolute inset-0 opacity-100 transition-opacity duration-1000 ease-in-out bg-cover bg-center" style="background-image: linear-gradient(rgba(4, 47, 31, 0.7), rgba(4, 47, 31, 0.8)), url('https://images.unsplash.com/photo-1565552645632-d725f8bfc19a?auto=format&fit=crop&q=80&w=1920');">
+                <div class="container mx-auto h-full flex flex-col justify-center items-center text-center px-4">
+                    <span class="bg-amber-400 text-emerald-950 text-xs md:text-sm font-bold uppercase px-3 py-1 rounded-full mb-4 tracking-wider">বছরের সবচেয়ে সুবর্ণ সময় (জুন ও জুলাই)</span>
+                    <h2 class="text-3xl md:text-5xl font-black text-white mb-4 leading-tight">সাশ্রয়ী মূল্যে পবিত্র <span class="text-amber-400">উমরাহ</span> করুন</h2>
+                    <p class="text-base md:text-xl text-emerald-100 max-w-2xl mb-8">পবিত্র মক্কা-মদিনার শান্ত, নিরিবিলি পরিবেশে ইবাদতের স্বর্ণালী সুযোগ এবার আপনিও হতে পারেন সেই সৌভাগ্যবানদের একজন।</p>
+                    <a href="#packages" class="bg-amber-500 hover:bg-amber-600 text-emerald-950 font-bold px-8 py-3 rounded-lg shadow-lg transition transform hover:-translate-y-0.5">প্যাকেজ দেখুন</a>
+                </div>
+            </div>
+            <div class="slide absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out bg-cover bg-center" style="background-image: linear-gradient(rgba(4, 47, 31, 0.75), rgba(4, 47, 31, 0.85)), url('https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?auto=format&fit=crop&q=80&w=1920');">
+                <div class="container mx-auto h-full flex flex-col justify-center items-center text-center px-4">
+                    <span class="bg-amber-400 text-emerald-950 text-xs md:text-sm font-bold uppercase px-3 py-1 rounded-full mb-4 tracking-wider">হজ পরবর্তী বিশেষ অফার</span>
+                    <h2 class="text-3xl md:text-5xl font-black text-white mb-4 leading-tight">কম ভিড়ে চমৎকার <span class="text-amber-400">পরিবেশ ও উন্নত সেবা</span></h2>
+                    <p class="text-base md:text-xl text-emerald-100 max-w-2xl mb-8">ভিড়মুক্ত পবিত্র হারাইমাইন শরিফাইনে প্রাণভরে ইবাদত ও জিয়ারতের এক অনন্য সুযোগ উপভোগ করুন।</p>
+                    <a href="#contact" class="bg-amber-500 hover:bg-amber-600 text-emerald-950 font-bold px-8 py-3 rounded-lg shadow-lg transition transform hover:-translate-y-0.5">বুকিং করতে যোগাযোগ করুন</a>
+                </div>
+            </div>
+        </div>
+        <button onclick="moveSlide(-1)" class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/30 text-white w-10 h-10 rounded-full flex items-center justify-center transition backdrop-blur-sm z-10"><i class="fa-solid fa-chevron-left"></i></button>
+        <button onclick="moveSlide(1)" class="absolute right-4 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/30 text-white w-10 h-10 rounded-full flex items-center justify-center transition backdrop-blur-sm z-10"><i class="fa-solid fa-chevron-right"></i></button>
+    </section>
+
+    <section id="verses" class="py-16 bg-gradient-to-b from-white to-amber-50/50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <div class="text-amber-600 text-2xl mb-2"><i class="fa-solid fa-star-and-crecent"></i></div>
+                <h3 class="text-2xl md:text-4xl font-bold text-emerald-950">উমরাহ সংক্রান্ত ফজিলত</h3>
+                <div class="w-24 h-1 bg-amber-500 mx-auto mt-3 rounded"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto" id="verses-list">
+                <div class="bg-white p-8 rounded-2xl shadow-md border-t-4 border-amber-500 flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs font-bold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-full uppercase tracking-wide">আল-কোরআন</span>
+                        <p class="text-xl font-serif text-right text-emerald-950 my-4 leading-loose" dir="rtl">وَأَتِمُّوا الْحَجَّ وَالْعُمْرَةَ لِلَّهِ</p>
+                        <p class="text-gray-700 italic leading-relaxed">"আর তোমরা আল্লাহর উদ্দেশ্যে হজ ও উমরাহ পূর্ণ কর।"</p>
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-500 font-medium">— সূরা আল-বাকারাহ, আয়াত: ১৯৬</div>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-md border-t-4 border-emerald-700 flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs font-bold text-amber-700 bg-amber-50 px-2.5 py-1 rounded-full uppercase tracking-wide">আল-হাদিস</span>
+                        <p class="text-xl font-serif text-right text-emerald-950 my-4 leading-loose" dir="rtl">الْعُمْرَةُ إِلَى الْعُمْرَةِ كَفَّارَةٌ لِمَا بَيْنَهُمَا</p>
+                        <p class="text-gray-700 italic leading-relaxed">"এক উমরাহর পর আরেক উমরাহ, এ উভয়ের মধ্যবর্তী সময়ের গুনাহসমূহের জন্য কাফফারা স্বরূপ।"</p>
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-500 font-medium">— সহীহ বুখারী, হাদিস নম্বর: ১৭৭৩</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="packages" class="py-16 bg-emerald-900 text-white relative">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h3 class="text-3xl md:text-4xl font-bold mb-3">আমাদের বিশেষ উমরাহ প্যাকেজ সমূহ</h3>
+                <p class="text-emerald-200 text-sm md:text-base max-w-xl mx-auto">আপনার সুবিধামত যেকোনো একটি সাশ্রয়ী ও প্রিমিয়াম ক্যাটাগরি বেছে নিন</p>
+                <div class="w-24 h-1 bg-amber-400 mx-auto mt-4 rounded"></div>
+            </div>
+
+            <div class="max-w-md mx-auto bg-amber-400 text-emerald-950 p-6 rounded-2xl mb-12 shadow-xl border border-amber-300">
+                <h4 class="text-center font-bold text-lg border-b border-emerald-950/20 pb-2 mb-4">
+                    <i class="fa-solid fa-plane-departure mr-2"></i> সম্ভাব্য ফ্লাইটের তারিখসমূহ (২০২৬)
+                </h4>
+                <ul class="grid grid-cols-2 gap-3 text-center font-bold" id="flight-dates">
+                    <li class="bg-emerald-950/10 py-1.5 px-3 rounded">২৩ জুন ২০২৬</li>
+                    <li class="bg-emerald-950/10 py-1.5 px-3 rounded">০১ জুলাই ২০২৬</li>
+                    <li class="bg-emerald-950/10 py-1.5 px-3 rounded">১২ জুলাই ২০২৬</li>
+                    <li class="bg-emerald-950/10 py-1.5 px-3 rounded">২২ জুলাই ২০২৬</li>
+                    <li class="bg-emerald-950/10 py-1.5 px-3 rounded">৩০ জুলাই ২০২৬</li>
+                </ul>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="packages-grid">
+                </div>
+        </div>
+    </section>
+
+    <div class="bg-amber-400 py-6 text-emerald-950 font-black text-center text-lg md:text-xl shadow-inner flex flex-col md:flex-row justify-center items-center gap-3">
+        <div class="flex items-center gap-2">
+            <i class="fa-solid fa-gift text-2xl animate-bounce"></i>
+            <span>বিশেষ উপহার বিশেষত্ব:</span>
+        </div>
+        <span class="bg-emerald-950 text-white px-4 py-1.5 rounded-full text-base font-bold">উমরাহ বুকিং করলেই এহরাম প্যাকেজ সম্পূর্ণ ফ্রি! 🎁</span>
+    </div>
+
+    <section id="features" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h3 class="text-2xl md:text-4xl font-bold text-emerald-950">প্যাকেজে যা কিছু অন্তর্ভুক্ত থাকছে</h3>
+                <div class="w-24 h-1 bg-amber-500 mx-auto mt-3 rounded"></div>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-6 max-w-5xl mx-auto text-center" id="inclusions-grid">
+                <div class="p-6 bg-amber-50/50 rounded-2xl border border-amber-100 shadow-sm hover:shadow-md transition">
+                    <div class="w-14 h-14 bg-emerald-100 text-emerald-800 rounded-full flex items-center justify-center text-2xl mx-auto mb-4"><i class="fa-solid fa-passport"></i></div>
+                    <h4 class="font-bold text-emerald-950">ভিসা ও টিকিট</h4>
+                </div>
+                <div class="p-6 bg-amber-50/50 rounded-2xl border border-amber-100 shadow-sm hover:shadow-md transition">
+                    <div class="w-14 h-14 bg-emerald-100 text-emerald-800 rounded-full flex items-center justify-center text-2xl mx-auto mb-4"><i class="fa-solid fa-hotel"></i></div>
+                    <h4 class="font-bold text-emerald-950">মানসম্মত হোটেল</h4>
+                </div>
+                <div class="p-6 bg-amber-50/50 rounded-2xl border border-amber-100 shadow-sm hover:shadow-md transition">
+                    <div class="w-14 h-14 bg-emerald-100 text-emerald-800 rounded-full flex items-center justify-center text-2xl mx-auto mb-4"><i class="fa-solid fa-bus-simple"></i></div>
+                    <h4 class="font-bold text-emerald-950">এসি ট্রান্সপোর্ট</h4>
+                </div>
+                <div class="p-6 bg-amber-50/50 rounded-2xl border border-amber-100 shadow-sm hover:shadow-md transition">
+                    <div class="w-14 h-14 bg-emerald-100 text-emerald-800 rounded-full flex items-center justify-center text-2xl mx-auto mb-4"><i class="fa-solid fa-kaaba"></i></div>
+                    <h4 class="font-bold text-emerald-950">সম্পূর্ণ জিয়ারাহ</h4>
+                </div>
+                <div class="p-6 bg-amber-50/50 rounded-2xl border border-amber-100 shadow-sm hover:shadow-md transition col-span-2 md:col-span-1">
+                    <div class="w-14 h-14 bg-emerald-100 text-emerald-800 rounded-full flex items-center justify-center text-2xl mx-auto mb-4"><i class="fa-solid fa-utensils"></i></div>
+                    <h4 class="font-bold text-emerald-950">৩ বেলা খাবার</h4>
+                </div>
+            </div>
+
+            <div class="mt-10 max-w-2xl mx-auto bg-emerald-50 border border-emerald-200 rounded-2xl p-4 text-center flex items-center justify-center gap-3 text-emerald-900 font-semibold">
+                <i class="fa-solid fa-circle-check text-xl text-emerald-600"></i>
+                <span>বিশেষ ফিচার: পবিত্র <strong class="text-emerald-950">রিয়াজুল জান্নাহ</strong> ভিজিটের বিশেষ ব্যবস্থা ও সার্বিক গাইডলাইন।</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-16 bg-gradient-to-b from-amber-50/30 to-amber-100/50 border-t border-amber-200">
+        <div class="container mx-auto px-4 max-w-5xl">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                
+                <div class="bg-white p-8 rounded-3xl shadow-xl text-center border border-amber-200 relative overflow-hidden">
+                    <div class="absolute top-0 inset-x-0 h-3 gold-gradient"></div>
+                    <div class="w-28 h-28 mx-auto rounded-full border-4 border-emerald-700 overflow-hidden shadow-lg mb-4 bg-gray-100 flex items-center justify-center">
+    <img src="/Screenshot_2026-06-11-18-58-49-526_com.miui.gallery-edit.jpg" alt="Mufti Abdullah" class="w-full h-full object-cover">
+</div>
+
+                    <h4 class="text-xl font-bold text-emerald-950" id="leader-name">মুফতি আব্দুল্লাহ আল মুর্তাজা   কাসেমী</h4>
+                    <p class="text-sm text-amber-700 font-medium mb-3">পরিচালক, নুসুক আল হারামাইন ট্যুরস এন্ড ট্রাভেলস</p>
+                    <p class="text-xs text-gray-500 bg-gray-100 px-4 py-2 rounded-xl inline-block">🎯 অভিজ্ঞ আলেমের প্রত্যক্ষ তত্ত্বাবধানে নির্ভরযোগ্য কাফেলা</p>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl md:text-3xl font-bold text-emerald-950 mb-6">সরাসরি আমাদের অফিসে যোগাযোগ করুন</h3>
+                    <div class="space-y-4 text-sm md:text-base">
+                        <div class="flex gap-4 items-start">
+                            <div class="w-10 h-10 rounded-xl bg-emerald-800 text-white flex items-center justify-center flex-shrink-0 shadow-md"><i class="fa-solid fa-location-dot"></i></div>
+                            <div>
+                                <h5 class="font-bold text-emerald-950">প্রধান কার্যালয়</h5>
+                                <p class="text-gray-600 mt-0.5" id="office-address">২৪/এ, ডঃ নওয়াব আলী টাওয়ার, লিফট-৬, রুম ৬০২, পুরানা পল্টন, ঢাকা-১০০০</p>
+                                <a href="http://maps.google.com/?q=Purana+Polton+Dhaka" target="_blank" class="text-xs font-bold text-emerald-700 hover:underline mt-1 inline-block"><i class="fa-solid fa-map-location-dot mr-1"></i> গুগল ম্যাপে লোকেশন দেখুন</a>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 items-start">
+                            <div class="w-10 h-10 rounded-xl bg-emerald-800 text-white flex items-center justify-center flex-shrink-0 shadow-md"><i class="fa-solid fa-phone"></i></div>
+                            <div>
+                                <h5 class="font-bold text-emerald-950">হটলাইন নম্বর</h5>
+                                <p class="text-xl font-black text-emerald-800 mt-0.5" id="contact-phone">01939-455988</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 items-start">
+                            <div class="w-10 h-10 rounded-xl bg-emerald-800 text-white flex items-center justify-center flex-shrink-0 shadow-md"><i class="fa-solid fa-hashtag"></i></div>
+                            <div>
+                                <h5 class="font-bold text-emerald-950">সামাজিক যোগাযোগ মাধ্যম</h5>
+                                <div class="flex gap-3 mt-1">
+                                    <a href="https://documenter.getpostman.com/view/18021171/2sAXxS4msc" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white px-3 py-1.5 rounded text-xs font-bold flex items-center gap-1"><i class="fa-brands fa-facebook"></i> ফেসবুক পেইজ</a>
+                                    <a href="https://documenter.getpostman.com/view/18021171/2sAXxS4msc" target="_blank" class="bg-red-600 hover:bg-red-700 text-white px-3 py-1.5 rounded text-xs font-bold flex items-center gap-1"><i class="fa-solid fa-video"></i> ভিডিও রিভিউ</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-emerald-950 text-emerald-200 py-8 text-center text-xs md:text-sm border-t border-emerald-900">
+        <p>&copy; ২০২৬ নুসুক আল হারামাইন ট্যুরস এন্ড ট্রাভেলস। সর্বস্বত্ব সংরক্ষিত।</p>
+    </footer>
+
+    <div id="admin-modal" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div id="admin-auth-card" class="bg-white rounded-2xl max-w-md w-full p-6 shadow-2xl relative border-t-8 border-emerald-800">
+            <button onclick="closeAdminModal()" class="absolute right-4 top-4 text-gray-400 hover:text-gray-600 text-xl"><i class="fa-solid fa-xmark"></i></button>
+            <h3 class="text-xl font-bold text-emerald-950 mb-4 text-center"><i class="fa-solid fa-lock mr-2"></i>অ্যাডমিন প্যানেল লগইন</h3>
+            <div class="space-y-4">
+                <div>
+                    <label class="block text-xs font-bold text-gray-700 mb-1">ইউজারনেম</label>
+                    <input type="text" id="admin-user" class="w-full px-3 py-2 border rounded-lg focus:outline-emerald-700" placeholder="admin">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-gray-700 mb-1">পাসওয়ার্ড</label>
+                    <input type="password" id="admin-pass" class="w-full px-3 py-2 border rounded-lg focus:outline-emerald-700" placeholder="••••••••">
+                </div>
+                <div id="auth-error" class="text-xs text-red-600 font-bold hidden">ভুল ইউজারনেম বা পাসওয়ার্ড! আবার চেষ্টা করুন।</div>
+                <button onclick="handleAdminLogin()" class="w-full bg-emerald-800 hover:bg-emerald-900 text-white font-bold py-2 rounded-lg transition">প্রবেশ করুন</button>
+            </div>
+        </div>
+
+        <div id="admin-dashboard-card" class="bg-white rounded-2xl max-w-4xl w-full max-h-[85vh] overflow-y-auto p-6 shadow-2xl relative hidden">
+            <div class="flex justify-between items-center border-b pb-4 mb-6">
+                <h3 class="text-xl font-bold text-emerald-950"><i class="fa-solid fa-sliders mr-2"></i>কন্টেন্ট এডিটর ড্যাশবোর্ড</h3>
+                <div class="flex items-center gap-4">
+                    <button onclick="handleAdminLogout()" class="text-xs bg-red-100 text-red-700 hover:bg-red-200 px-3 py-1.5 rounded font-bold transition">লগআউট</button>
+                    <button onclick="closeAdminModal()" class="text-gray-400 hover:text-gray-600 text-xl"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+            </div>
+
+            <div class="space-y-6">
+                <div class="bg-gray-50 p-4 rounded-xl border">
+                    <h4 class="font-bold text-emerald-900 mb-3 border-b pb-1">প্রাথমিক তথ্য পরিবর্তন</h4>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold text-gray-600 mb-1">প্রতিষ্ঠানের নাম</label>
+                            <input type="text" id="edit-site-title" class="w-full px-3 py-1.5 border rounded bg-white text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-gray-600 mb-1">মোবাইল নম্বর</label>
+                            <input type="text" id="edit-phone" class="w-full px-3 py-1.5 border rounded bg-white text-sm">
+                        </div>
+                        <div class="md:col-span-2">
+                            <label class="block text-xs font-bold text-gray-600 mb-1">অফিসের ঠিকানা</label>
+                            <input type="text" id="edit-address" class="w-full px-3 py-1.5 border rounded bg-white text-sm">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 p-4 rounded-xl border">
+                    <h4 class="font-bold text-emerald-900 mb-3 border-b pb-1">প্যাকেজ মূল্য ও বিবরণ পরিবর্তন</h4>
+                    <div id="admin-packages-list" class="space-y-4">
+                        </div>
+                </div>
+
+                <div class="flex justify-end gap-3 pt-4 border-t">
+                    <button onclick="closeAdminModal()" class="px-4 py-2 border rounded-lg text-sm font-semibold hover:bg-gray-50 transition">বাতিল</button>
+                    <button onclick="saveAdminData()" class="px-6 py-2 bg-emerald-800 hover:bg-emerald-900 text-white rounded-lg text-sm font-bold shadow-md transition">পরিবর্তনগুলো সংরক্ষণ করুন</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // App State / Data Core
+        let appData = {
+            siteName: "নুসুক আল হারামাইন",
+            phone: "01939-455988",
+            address: "২৪/এ, ডঃ নওয়াব আলী টাওয়ার, লিফট-৬, রুম ৬০২, পুরানা পল্টন, ঢাকা-১০০০",
+            packages: [
+                { id: "vip", title: "ভি আই পি", price: "২,৪৫,৫০০", details: "হোটেল: হারাম থেকে ০ মিটার দূরত্বে", icon: "fa-crown", badge: "লাক্সারি চয়েস" },
+                { id: "premium", title: "প্রিমিয়াম", price: "১,৬৫,৫০০", details: "মক্কা: ৩০০মি | মদিনা: ১৫০মি দূরত্বে", icon: "fa-gem", badge: "জনপ্রিয়" },
+                { id: "standard", title: "স্ট্যান্ডার্ড", price: "১,৫০,৫০০", details: "মক্কা: ৬০০মি | মদিনা: ৫০০মি দূরত্বে", icon: "fa-star", badge: "বাজেট ফ্রেন্ডলি" },
+                { id: "eco_direct", title: "ইকোনমি (ডিরেক্ট)", price: "১,৪০,৫০০", details: "মক্কা: ৯০০মি | মদিনা: ৭০০মি দূরত্বে", icon: "fa-plane-arrival", badge: "সরাসরি ফ্লাইট" },
+                { id: "eco_transit", title: "ইকোনমি (ট্রানজিট)", price: "১,৩০,৫০০", details: "মক্কা: ৯০০মি | মদিনা: ৭০০মি দূরত্বে", icon: "fa-route", badge: "সর্বোচ্চ সাশ্রয়ী" }
+            ]
+        };
+
+        // UI Initialization
+        function initApp() {
+            // Render basic text elements
+            document.getElementById('site-title').innerText = appData.siteName;
+            document.getElementById('nav-phone').innerText = appData.phone;
+            document.getElementById('contact-phone').innerText = appData.phone;
+            document.getElementById('office-address').innerText = appData.address;
+
+            // Render Package Cards inside Grid
+            const grid = document.getElementById('packages-grid');
+            grid.innerHTML = '';
+            appData.packages.forEach(pkg => {
+                const card = document.createElement('div');
+                card.className = "bg-white text-gray-800 rounded-3xl overflow-hidden shadow-lg border border-emerald-800/10 flex flex-col justify-between relative transform hover:-translate-y-1 transition duration-300";
+                card.innerHTML = `
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="bg-amber-100 text-amber-900 font-bold text-xs px-2.5 py-1 rounded-full border border-amber-200">${pkg.badge}</span>
+                            <div class="text-2xl text-emerald-700"><i class="fa-solid ${pkg.icon}"></i></div>
+                        </div>
+                        <h4 class="text-xl font-bold text-emerald-950 mb-1">${pkg.title}</h4>
+                        <p class="text-xs text-gray-500 mb-4"><i class="fa-solid fa-hotel mr-1 text-amber-600"></i> ${pkg.details}</p>
+                        <div class="bg-emerald-50 rounded-2xl p-4 text-center border border-emerald-100">
+                            <span class="text-xs font-semibold text-emerald-800 block mb-0.5">প্যাকেজ মূল্য</span>
+                            <span class="text-2xl font-black text-emerald-900">৳ ${pkg.price}/=</span>
+                        </div>
+                    </div>
+                    <div class="p-4 bg-gray-50 border-t border-gray-100">
+                        <a href="tel:${appData.phone.replace(/[^0-9]/g, '')}" class="w-full block text-center bg-emerald-800 hover:bg-emerald-900 text-white font-bold py-2 rounded-xl text-sm transition">
+                            <i class="fa-solid fa-paper-plane mr-1.5"></i> বুকিং করুন
+                        </a>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        // --- Interactive Slideshow Engine ---
+        let currentSlideIdx = 0;
+        function showSlide(index) {
+            const slides = document.querySelectorAll('.slide');
+            if(index >= slides.length) currentSlideIdx = 0;
+            if(index < 0) currentSlideIdx = slides.length - 1;
+            
+            slides.forEach((slide, idx) => {
+                slide.style.opacity = (idx === currentSlideIdx) ? "1" : "0";
+            });
+        }
+        function moveSlide(step) {
+            currentSlideIdx += step;
+            showSlide(currentSlideIdx);
+        }
+        // Auto-advance slides every 5 seconds
+        setInterval(() => { moveSlide(1); }, 5000);
+
+        // --- Admin Operational Workflow ---
+        function openAdminModal() {
+            document.getElementById('admin-modal').classList.remove('hidden');
+        }
+        function closeAdminModal() {
+            document.getElementById('admin-modal').classList.add('hidden');
+            document.getElementById('auth-error').classList.add('hidden');
+        }
+
+        function handleAdminLogin() {
+            const user = document.getElementById('admin-user').value;
+            const pass = document.getElementById('admin-pass').value;
+
+            if(user === 'admin' && pass === 'admin123') {
+                document.getElementById('admin-auth-card').classList.add('hidden');
+                document.getElementById('admin-dashboard-card').classList.remove('hidden');
+                populateAdminForm();
+            } else {
+                document.getElementById('auth-error').classList.remove('hidden');
+            }
+        }
+
+        function handleAdminLogout() {
+            document.getElementById('admin-dashboard-card').classList.add('hidden');
+            document.getElementById('admin-auth-card').classList.remove('hidden');
+            document.getElementById('admin-user').value = '';
+            document.getElementById('admin-pass').value = '';
+            closeAdminModal();
+        }
+
+        function populateAdminForm() {
+            document.getElementById('edit-site-title').value = appData.siteName;
+            document.getElementById('edit-phone').value = appData.phone;
+            document.getElementById('edit-address').value = appData.address;
+
+            const editPkgContainer = document.getElementById('admin-packages-list');
+            editPkgContainer.innerHTML = '';
+            
+            appData.packages.forEach((pkg, index) => {
+                const row = document.createElement('div');
+                row.className = "p-3 bg-white border rounded-lg grid grid-cols-1 md:grid-cols-3 gap-3 items-center";
+                row.innerHTML = `
+                    <div class="font-bold text-sm text-emerald-900">${pkg.title}</div>
+                    <div>
+                        <label class="block text-[10px] font-bold text-gray-400">মূল্য (৳)</label>
+                        <input type="text" id="edit-pkg-price-${index}" class="w-full px-2 py-1 border rounded text-xs" value="${pkg.price}">
+                    </div>
+                    <div>
+                        <label class="block text-[10px] font-bold text-gray-400">হোটেল/লোকেশন বিবরণ</label>
+                        <input type="text" id="edit-pkg-details-${index}" class="w-full px-2 py-1 border rounded text-xs" value="${pkg.details}">
+                    </div>
+                `;
+                editPkgContainer.appendChild(row);
+            });
+        }
+
+        function saveAdminData() {
+            // Sync fields
+            appData.siteName = document.getElementById('edit-site-title').value;
+            appData.phone = document.getElementById('edit-phone').value;
+            appData.address = document.getElementById('edit-address').value;
+
+            // Sync dynamic packages data
+            appData.packages.forEach((pkg, index) => {
+                pkg.price = document.getElementById(`edit-pkg-price-${index}`).value;
+                pkg.details = document.getElementById(`edit-pkg-details-${index}`).value;
+            });
+
+            // Re-render Client UI view layer
+            initApp();
+            closeAdminModal();
+            alert('অভিনন্দন! তথ্য সফলভাবে আপডেট হয়েছে।');
+        }
+
+        // Launch app setup on page ready
+        window.onload = initApp;
+    </script>
+</body>
+</html
